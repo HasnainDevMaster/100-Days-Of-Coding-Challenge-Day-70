@@ -38,8 +38,8 @@ const employee1 = {
     employeeId: 123,
 };
 const employee2 = {
-    name: "John",
-    employeeId: 123,
+    name: "Stuart",
+    employeeId: 321,
 };
 const newCar = {
     make: "Toyota",
@@ -47,7 +47,7 @@ const newCar = {
 };
 const myCar = {
     make: "Toyota",
-    model: "Corolla",
+    model: "Camry",
 };
 const userId = "abc123";
 const myAddress = {

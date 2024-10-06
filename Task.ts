@@ -99,6 +99,71 @@ For example, the HTMLImageElement interface represents an HTML <img> element: */
 
 //------------------------------------------------------------------------------------------------------------------
 
+// 5. HTMLImageElement
+
+/* The HTMLImageElement interface represents an HTML <img> element and provides properties and methods to manipulate image elements.
+Here are some key properties and methods along with an example: */
+
+// Properties
+
+/* alt: A string that reflects the alt HTML attribute, providing alternate text for the image.
+
+src: A string representing the URL of the image.
+
+height: An integer reflecting the height of the image in CSS pixels.
+
+width: An integer reflecting the width of the image in CSS pixels.
+
+complete: A boolean indicating whether the image has finished loading.
+
+naturalHeight: The intrinsic height of the image in CSS pixels.
+
+naturalWidth: The intrinsic width of the image in CSS pixels. */
+
+// Methods
+
+/* decode(): Returns a promise that resolves when the image is decoded.
+
+addEventListener(): Adds an event listener to the image element.
+
+removeEventListener(): Removes an event listener from the image element. */
+
+// Example
+// Here’s a simple example demonstrating how to create and manipulate an HTMLImageElement:
+
+// Create a new image element
+// const img = new Image();
+// img.src = "https://example.com/image.jpg";
+// img.alt = "Example Image";
+// img.width = 300;
+// img.height = 200;
+
+// Append the image to the body
+// document.body.appendChild(img);
+
+// Check if the image has loaded
+// img.addEventListener("load", () => {
+//  console.log("Image loaded successfully");
+//  console.log(`Natural dimensions: ${img.naturalWidth}x${img.naturalHeight}`);
+// });
+
+// Handle image loading error
+// img.addEventListener("error", () => {
+//  console.log("Failed to load image");
+// });
+
+// In this example:
+
+/* We create a new image element using the Image() constructor.
+
+Set the src, alt, width, and height properties.
+
+Append the image to the document body.
+
+Add event listeners to handle the load and error events. */
+
+//-----------------------------------------------------------------------------------------------------------------------
+
 /* 5. Interface vs. Type Aliases
 Both interfaces and type aliases can be used to define the shape of an object, but they have some differences.
 Interfaces are generally preferred for defining object shapes,
